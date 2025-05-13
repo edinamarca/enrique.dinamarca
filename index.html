@@ -5,10 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enrique Dinamarca Rebolledo - CV</title>
     <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #ecf0f1;
+            --background-color: #1a1a1a;
+            --card-color: #2d2d2d;
+            --border-color: #444;
+            --skill-color: #3a3a3a;
+            --date-color: #bdc3c7;
+        }
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--text-color);
+            background-color: var(--background-color);
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
@@ -16,11 +28,11 @@
         header {
             text-align: center;
             margin-bottom: 30px;
-            border-bottom: 2px solid #3498db;
+            border-bottom: 2px solid var(--primary-color);
             padding-bottom: 20px;
         }
         h1 {
-            color: #2c3e50;
+            color: var(--primary-color);
             margin-bottom: 5px;
         }
         .contact-info {
@@ -36,28 +48,37 @@
         }
         .section {
             margin-bottom: 25px;
+            background-color: var(--card-color);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
         h2 {
-            color: #3498db;
-            border-bottom: 1px solid #eee;
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--border-color);
             padding-bottom: 5px;
         }
         h3 {
             margin-bottom: 5px;
-            color: #2c3e50;
+            color: var(--text-color);
         }
         .job-title {
             font-weight: bold;
+            color: var(--primary-color);
         }
         .company {
             font-style: italic;
+            color: var(--text-color);
         }
         .date {
-            color: #7f8c8d;
+            color: var(--date-color);
             font-size: 0.9em;
         }
         ul {
             padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
         }
         .skills {
             display: flex;
@@ -65,7 +86,7 @@
             gap: 10px;
         }
         .skill {
-            background-color: #f0f0f0;
+            background-color: var(--skill-color);
             padding: 5px 10px;
             border-radius: 3px;
             font-size: 0.9em;
@@ -75,6 +96,9 @@
                 flex-direction: column;
                 align-items: center;
                 gap: 5px;
+            }
+            .section {
+                padding: 15px;
             }
         }
     </style>
